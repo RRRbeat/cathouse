@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f701f0;
+    color: #00fc37;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px;
+    font-family: 'UnifrakturCook', cursive; /* Usando la fuente gótica */
+}
+
+header h1 {
+    color: #5A20CB;
+    font-family: 'UnifrakturCook', cursive; /* Usando la fuente gótica */
+}
+.habitaciones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #fa0000fe;
+}
+
+.habitacion {
+    border: 10px solid #0073ff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+}
+
+#cama {
+    background-color: #3f00ee;
+    border: 2px solid #ff00e6;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#controles {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+#controles button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #f80808fa;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#controles button:active {
+    background-color: #ccc;
+}
+
+#gato {
+    font-size: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+#cama {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* A 20 píxeles del fondo */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 100px; /* Ancho de la cama */
+    height: 50px; /* Altura de la cama */
+    background-color: #FFDDDD; /* Color de fondo */
+    border: 2px solid #B22222; /* Bordes */
+    border-radius: 30px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    line-height: 50px; /* Alineación vertical del texto */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+}

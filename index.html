@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Juego del Gato</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>cathouse</h1>
+    </header>
+    <div class="habitaciones">
+        <div class="habitacion">
+            <h2>Sala</h2>
+            <div id="juguete-sala" class="juguete" style="display: none;">🧶</div>
+        </div>
+        <div class="habitacion">
+            <h2>Cocina</h2>
+            <div id="comida" style="display: block;">🍽️</div>
+        </div>
+        <div class="habitacion">
+            <h2>pieza</h2>
+            <div id="juguete-dormitorio" class="juguete" style="display: none;">🐭</div>
+        </div>
+        <div class="habitacion">
+            <h2>Jardín</h2>
+            <div id="juguete-jardin" class="juguete" style="display: none;">🐾</div>
+        </div>
+        <div id="cama" style="display: none;">Cama</div>
+        
+    </div>
+    <div id="gato">🐱</div>
+
+    <!-- Botones de movimiento -->
+    <div id="controles">
+        <button onclick="moverGato('izquierda')">⬅️</button>
+        <button onclick="moverGato('derecha')">➡️</button>
+        <button onclick="saltarGato()">⏫</button>
+        <button onclick="moverGato('arriba')">⬆️</button>
+        <button onclick="moverGato('abajo')">⬇️</button>
+    </div>
+</body>
+</html>
